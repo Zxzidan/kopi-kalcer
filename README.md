@@ -1,6 +1,7 @@
-<img width="1280" height="632" alt="image" src="https://github.com/user-attachments/assets/6b0b7643-f94b-44f7-a4ce-5e55a5537a0e" /># ☕ Kopi Kalcer
+☕ Kopi Kalcer
 
-![Logo Kopi Kalcer](assets/img/preview)
+<img width="2000" height="2000" alt="preview" src="https://github.com/user-attachments/assets/fbf7b96f-4236-433a-9298-d0041ccbb36b" />
+
 
 ## 📌 Tentang Project
 
@@ -60,7 +61,7 @@ kopi-kalcer/
 ├── index.html
 ├── assets/
 │   ├── img/
-│   │   └── preview.png
+│   │  
 │   └── css/
 │       └── style.css
 ├── js/
