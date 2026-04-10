@@ -1,6 +1,6 @@
 # ☕ Kopi Kalcer
 
-![Logo Kopi Kalcer](assets/img/logo.png)
+![Logo Kopi Kalcer](assets/img/preview)
 
 ## 📌 Tentang Project
 
