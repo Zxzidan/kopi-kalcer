@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 /* BAGIAN STYLE NAVBAR */
 
 .navbar {
@@ -152,3 +156,171 @@
 }
 
 /* Akhir Style Konten2 */
+
+/* Awal Style Pendiri */
+.pendiri {
+  background-color: #f8f9fa;
+}
+
+/* Nama */
+.nama {
+  font-size: 3em;
+  color: #2f2a25;
+  margin-bottom: 10px;
+}
+
+/* Jabatan */
+.jabatan {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Judul */
+.judul {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #2f2a25;
+}
+
+/* Deskripsi */
+.deskripsi {
+  font-size: 1.05em;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+}
+
+/* Foto */
+.foto-profil {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Akhir Style Pendiri */
+
+/* Awal Style Info Kopi Kalcer */
+.info-kalcer {
+  background-color: #f8f9fa;
+}
+
+/* Logo */
+.info-kalcer {
+  background-color: #83746d1b;
+  color: white;
+}
+
+.logo {
+  font-size: 3em;
+  font-weight: bold;
+  color: #5a4634;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+/* Deskripsi */
+.deskripsi {
+  font-size: 1.1em;
+  color: #555;
+  max-width: 500px;
+}
+
+/* Foto */
+.foto-kalcer {
+  margin-top: 20px;
+}
+
+.foto-kalcer img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Info kanan */
+.judul-info {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #2f2a25;
+}
+
+.info-kalcer p {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Maps */
+.maps iframe {
+  width: 100%;
+  border-radius: 15px;
+}
+/* Akhir Style Info Kopi Kalcer */
+
+/* Style Menu Kopi Kalcer */
+.menu-kalcer {
+  background-color: #c8b79c;
+  width: 100%;
+  padding: 60px 80px;
+}
+
+/* Judul */
+.judul-menu {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Kategori */
+.kategori {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.kategori button {
+  border: 1px solid #333;
+  background: transparent;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.kategori .active {
+  background-color: #e38b29;
+  color: white;
+  border: none;
+}
+
+/* List Menu */
+.list-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  width: 100%;    
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #333;
+  padding: 8px 0;
+}
+
+/* Hover */
+.item:hover {
+  color: #e38b29;
+  transform: translateX(5px);
+  transition: 0.2s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .list-menu {
+    grid-template-columns: 1fr;
+  }
+}
+/* Akhir Style Menu Kopi Kalcer */
+

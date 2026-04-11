@@ -1,0 +1,60 @@
+.lokasi-kopi {
+    min-height: 500px;  
+  display: flex;
+  align-items: center;
+  background: #f8f5f0;
+  padding: 60px 20px;
+}
+
+/* GRID UTAMA */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* KIRI */
+.col-kiri {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* GAMBAR */
+#gambar-lokasi {
+  width: 100%;
+  max-width: 450px; /* 🔥 biar besar */
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* KANAN */
+.col-kanan {
+  flex: 1;
+  min-height: 400px;
+}
+
+/* BUTTON */
+.pilih-lokasi,
+.proses {
+  margin: 20px 0;
+}
+
+button {
+  padding: 8px 15px;
+  border: 1px solid #333;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button.active {
+  background: #e38b29;
+  color: white;
+  border: none;
+}
+
+#text-lokasi,
+#detail-text {
+  min-height: 120px;
+}
