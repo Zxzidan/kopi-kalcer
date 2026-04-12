@@ -4,8 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kopi Kalcer</title>
-
-    <!-- Untuk Boostrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,9 +11,8 @@
       crossorigin="anonymous"
     />
 
-    <!-- Untuk Style -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/styledaripetani.css" />
+    <link rel="stylesheet" href="assets/css/styleKontakKami.css" />
 
     <!-- Untuk Icon -->
     <link
@@ -113,59 +110,63 @@
         </div>
       </nav>
     </div>
+
     <!-- Akhir header -->
 
-    <section class="lokasi-kopi">
-      <div class="container">
-        <div class="row">
-          <!-- KIRI (GAMBAR) -->
-          <div class="col-kiri">
-            <img id="gambar-lokasi" src="assets/img/LOGO UMKM.png" alt="Asal Kopi" />
-          </div>
+    <section class="form-section">
+      <div class="form-container">
+        <h2>MAU PESAN KOPI KALCER DALAM JUMLAH BESAR?</h2>
+        <p>
+          Apakah kamu ingin memesan Kopi Kalcer untuk berbagai kebutuhan? Kami
+          menyediakan kopi berkualitas dari biji pilihan petani lokal, cocok
+          untuk acara, kantor, cafe, maupun bisnis kamu.
+        </p>
 
-          <!-- KANAN (TEXT) -->
-          <div class="col-kanan">
-            <h2>Asal Kopi Nusantara</h2>
+        <form id="orderForm" method="post" action="aksiPost.php">
+          <label>Kebutuhan*</label>
+          <select name="kebutuhan" required>
+            <option value="">—Silakan pilih opsi—</option>
+            <option value="Acara / Event">Acara / Event</option>
+            <option value="Perusahaan">Perusahaan</option>
+            <option value="Reseller">Reseller</option>
+            <option value="Lainnya">Lainnya</option>
+          </select>
 
-            <div class="pilih-lokasi">
-              <button class="lokasi-btn active" data-lokasi="gayo">Gayo</button>
-              <button class="lokasi-btn" data-lokasi="toraja">Toraja</button>
-              <button class="lokasi-btn" data-lokasi="kintamani">
-                Kintamani
-              </button>
-            </div>
+          <label>Nama Lengkap*</label>
+          <input
+            type="text"
+            name="nama"
+            placeholder="Masukkan nama lengkap"
+            required
+          />
 
-            <p id="text-lokasi">
-              Kopi Gayo berasal dari Aceh dengan cita rasa kuat.
-            </p>
+          <label>No. WhatsApp*</label>
+          <input
+            type="text"
+            name="whatsapp"
+            placeholder="Masukkan nomor WhatsApp"
+            required
+          />
 
-            <!-- PROSES -->
-            <div class="proses">
-              <button class="step active" data-step="petik">Petik</button>
-              <button class="step" data-step="olah">Pengolahan</button>
-              <button class="step" data-step="sangrai">Sangrai</button>
-              <button class="step" data-step="seduh">Penyeduhan</button>
-            </div>
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Masukkan email" />
 
-            <p id="detail-text">
-              Biji kopi dipetik secara manual saat sudah matang sempurna.
-            </p>
-          </div>
-        </div>
+          <label>Isi Pesan*</label>
+          <textarea
+            name="pesan"
+            placeholder="Isi Pesan Kamu Di Sini"
+            required
+          ></textarea>
+
+          <button type="submit">Kirim Pesanan</button>
+        </form>
       </div>
+
+      <!-- tombol scroll atas -->
+      <button id="scrollTopBtn">↑</button>
     </section>
 
-    <!-- awal Footer -->
-    <footer class="bg-dark text-light py-4">
-      <div class="container">
-        <p class="text-center mb-0">
-          &copy; 2026 Kopi Kalcer. All rights reserved.
-        </p>
-      </div>
-    </footer>
-    <!-- akhir Footer -->
-
-    <script src="assets/js/dariPetani.js"></script>
+    <script src="assets/js/kontakKami.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

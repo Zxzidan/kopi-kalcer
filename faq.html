@@ -4,18 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kopi Kalcer</title>
-
-    <!-- Untuk Boostrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-
-    <!-- Untuk Style -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/styledaripetani.css" />
+    <link rel="stylesheet" href="assets/css/faq.css" />
 
     <!-- Untuk Icon -->
     <link
@@ -113,60 +109,103 @@
         </div>
       </nav>
     </div>
+
     <!-- Akhir header -->
 
-    <section class="lokasi-kopi">
-      <div class="container">
-        <div class="row">
-          <!-- KIRI (GAMBAR) -->
-          <div class="col-kiri">
-            <img id="gambar-lokasi" src="assets/img/LOGO UMKM.png" alt="Asal Kopi" />
+    <section class="faq-section">
+      <h1>FAQ Kopi Kalcer </h1>
+
+      <!-- KATEGORI 1 -->
+      <div class="faq-box">
+        <h2>INFO PEMBELIAN & PENGIRIMAN</h2>
+
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>Di mana saya bisa membeli Kopi Kalcer?</span>
+            <span class="icon">−</span>
           </div>
+          <div class="faq-answer">
+            Anda bisa membeli Kopi Kalcer langsung di toko kami atau melalui
+            pemesanan online.
+          </div>
+        </div>
 
-          <!-- KANAN (TEXT) -->
-          <div class="col-kanan">
-            <h2>Asal Kopi Nusantara</h2>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah Kopi Kalcer bisa dikirim ke luar kota?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Ya, kami melayani pengiriman ke berbagai kota melalui jasa
+            ekspedisi.
+          </div>
+        </div>
 
-            <div class="pilih-lokasi">
-              <button class="lokasi-btn active" data-lokasi="gayo">Gayo</button>
-              <button class="lokasi-btn" data-lokasi="toraja">Toraja</button>
-              <button class="lokasi-btn" data-lokasi="kintamani">
-                Kintamani
-              </button>
-            </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah tersedia pemesanan untuk event?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Tersedia, silakan hubungi kami untuk pemesanan dalam jumlah besar.
+          </div>
+        </div>
+      </div>
 
-            <p id="text-lokasi">
-              Kopi Gayo berasal dari Aceh dengan cita rasa kuat.
-            </p>
+      <!-- KATEGORI 2 -->
+      <div class="faq-box">
+        <h2>PENYIMPANAN PRODUK</h2>
 
-            <!-- PROSES -->
-            <div class="proses">
-              <button class="step active" data-step="petik">Petik</button>
-              <button class="step" data-step="olah">Pengolahan</button>
-              <button class="step" data-step="sangrai">Sangrai</button>
-              <button class="step" data-step="seduh">Penyeduhan</button>
-            </div>
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>Bagaimana cara menyimpan kopi agar tetap segar?</span>
+            <span class="icon">−</span>
+          </div>
+          <div class="faq-answer">
+            Simpan kopi di tempat kering dan tertutup rapat, hindari sinar
+            matahari langsung.
+          </div>
+        </div>
 
-            <p id="detail-text">
-              Biji kopi dipetik secara manual saat sudah matang sempurna.
-            </p>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah kopi bisa disimpan di kulkas?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Tidak disarankan karena dapat mempengaruhi aroma dan rasa kopi.
+          </div>
+        </div>
+      </div>
+
+      <!-- KATEGORI 3 -->
+      <div class="faq-box">
+        <h2>KOMPOSISI PRODUK</h2>
+
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>Kopi Kalcer terbuat dari apa?</span>
+            <span class="icon">−</span>
+          </div>
+          <div class="faq-answer">
+            Kopi Kalcer menggunakan biji kopi pilihan dari petani lokal dengan
+            proses roasting terbaik.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah kopi ini menggunakan bahan tambahan?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Tidak, kami menggunakan bahan alami tanpa tambahan berbahaya.
           </div>
         </div>
       </div>
     </section>
 
-    <!-- awal Footer -->
-    <footer class="bg-dark text-light py-4">
-      <div class="container">
-        <p class="text-center mb-0">
-          &copy; 2026 Kopi Kalcer. All rights reserved.
-        </p>
-      </div>
-    </footer>
-    <!-- akhir Footer -->
-
-    <script src="assets/js/dariPetani.js"></script>
-
+    <script src="assets/js/faq.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

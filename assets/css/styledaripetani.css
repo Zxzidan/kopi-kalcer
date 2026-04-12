@@ -23,7 +23,7 @@
 /* GAMBAR */
 #gambar-lokasi {
   width: 100%;
-  max-width: 450px; /* 🔥 biar besar */
+  max-width: 450px; 
   border-radius: 20px;
   object-fit: cover;
 }
