@@ -20,52 +20,79 @@
     />
   </head>
   <body>
-    <!-- Awal header -->
+    <!-- Awal Header -->
     <div class="header">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
             <img
               src="assets/img/LOGO UMKM.png"
               alt="KEDAI KALCER"
-              width="150"
-              height="150"
+              class="logo-navbar"
             />
           </a>
 
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+          <!-- Tombol Hamburger untuk Mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu Navigasi -->
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNavDropdown"
+          >
+            <!-- Menu Utama -->
+            <ul class="navbar-nav mx-auto text-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
                 >
+                  Home
+                </a>
               </li>
 
+              <!-- Dropdown About Us -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="aboutUs.html"
+                  href="#"
+                  id="aboutDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   About Us
                 </a>
-                <ul class="dropdown-menu">
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="aboutDropdown"
+                >
                   <li>
-                    <a class="dropdown-item" href="kopiKalcer.html"
-                      >Kopi Kalcer</a
-                    >
+                    <a class="dropdown-item" href="kopiKalcer.html">
+                      Kopi Kalcer
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="productUnggulan.html"
-                      >Menu Unggulan</a
-                    >
+                    <a class="dropdown-item" href="productUnggulan.html">
+                      Menu Unggulan
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="dariPetani.html"
-                      >Dari Petani</a
-                    >
+                    <a class="dropdown-item" href="dariPetani.html">
+                      Dari Petani
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -78,37 +105,52 @@
                 <a class="nav-link" href="faq.html">FAQ</a>
               </li>
             </ul>
-          </div>
 
-          <div class="sosial-media">
-            <a href="https://www.instagram.com/dandz22?igsh=ZXJnaW53endiYXhk&utm_source=qr"
-              ><i
-                class="fa-brands fa-square-instagram fa-xl"
-                style="color: rgb(15, 34, 48)"
-              ></i
-            ></a>
-           
-            <a href="https://wa.me/6282131466942"
-              ><i
-                class="fa-brands fa-whatsapp fa-xl"
-                style="color: rgb(15, 34, 48)"
-              ></i
-            ></a>
-            <a href="https://www.tiktok.com/@dandaz22?_r=1&_t=ZS-95Uw5ToYeBQ"
-              ><i
-                class="fa-brands fa-tiktok fa-xl"
-                style="color: rgb(15, 34, 48)"
-              ></i
-            ></a>
+            <!-- Sosial Media -->
+            <div
+              class="sosial-media d-flex justify-content-center mt-3 mt-lg-0"
+            >
+              <a
+                href="https://www.instagram.com/dandz22?igsh=ZXJnaW53endiYXhk&utm_source=qr"
+                class="mx-2"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-instagram fa-xl"
+                  style="color: rgb(15, 34, 48)"
+                ></i>
+              </a>
+
+              <a
+                href="https://wa.me/6282131466942"
+                class="mx-2"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-whatsapp fa-xl"
+                  style="color: rgb(15, 34, 48)"
+                ></i>
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@dandaz22?_r=1&_t=ZS-95Uw5ToYeBQ"
+                class="mx-2"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-tiktok fa-xl"
+                  style="color: rgb(15, 34, 48)"
+                ></i>
+              </a>
+            </div>
           </div>
         </div>
       </nav>
     </div>
-
-    <!-- Akhir header -->
+    <!-- Akhir Header -->
 
     <section class="faq-section">
-      <h1>FAQ Kopi Kalcer </h1>
+      <h1>FAQ Kopi Kalcer</h1>
 
       <!-- KATEGORI 1 -->
       <div class="faq-box">
