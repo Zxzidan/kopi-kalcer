@@ -1,68 +1,76 @@
+/* =======================
+   GLOBAL STYLE
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
 }
 
-/* BAGIAN STYLE NAVBAR */
-
+/* =======================
+   NAVBAR
+======================= */
 .navbar {
-  height: 100px;
-  padding: 0 20px;
+  min-height: 80px;
+  padding: 10px 20px;
 }
 
-.navbar img {
-  height: 150px;
+.navbar-brand img {
+  height: 70px;
+  width: auto;
   object-fit: contain;
-
-  /* Tujuannya agar gambar bisa mengubah posisi relatif terhadap elemen induknya */
-  position: relative;
-
-  top: -3px;
-  left: 95px;
 }
 
 .navbar-nav {
-  position: relative;
-  left: 300px;
+  gap: 20px;
 }
 
-.navbar-nav li {
-  padding: 30px;
+.navbar-nav .nav-link {
+  font-weight: 500;
 }
 
 .dropdown-menu li {
-  padding: 10px;
+  padding: 8px 15px;
 }
 
 .sosial-media {
-  position: relative;
-  right: 30px;
+  display: flex;
+  gap: 10px;
 }
 
 .sosial-media a {
-  padding: 15px;
+  padding: 8px;
+  font-size: 18px;
 }
-/* Akhir Style Navbar */
 
-/* Awal Style Jumbotron */
+/* =======================
+   JUMBOTRON
+======================= */
 .jumbotron {
-  height: 95vh;
-
+  min-height: 95vh;
   background-size: cover;
   background-position: center;
   position: relative;
-
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }
 
 .jumbotron::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2)
+  );
 }
 
 .container-jumbotron {
@@ -70,25 +78,24 @@ body {
   z-index: 2;
   color: white;
   max-width: 600px;
-  margin-left: 50px;
 }
 
 .container-jumbotron h1 {
-  font-size: 60px;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
 .container-jumbotron p {
-  font-size: 18px;
+  font-size: 1.1rem;
   margin-top: 10px;
 }
 
-/* Akhir Style Jumbotron */
-
-/* Awal Style Konten1 */
+/* =======================
+   KONTEN 1
+======================= */
 .konten1 {
   position: relative;
-  padding: 20px 20px;
+  padding: 40px 20px;
   background-size: cover;
   background-position: center;
 }
@@ -97,36 +104,34 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .konten1 p {
   position: relative;
   z-index: 2;
   text-align: justify;
-  max-width: 1000px; /* Batasi lebar teks */
-  margin: auto; /* Biar tetap di tengah */
-  padding: 20px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
-/* Akhir Style konten1 */
 
-/* Awal Style Konten2 */
+/* =======================
+   KONTEN 2
+======================= */
 .konten2 {
   position: relative;
-  padding: 20px 20px;
+  padding: 60px 20px;
   text-align: center;
   background-image: url("../img/pexels-834934396-20818883.jpg");
   background-size: cover;
   background-position: center;
-  overflow: hidden;
 }
 
 .konten2::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* ganti jadi gelap */
-  z-index: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .konten2 * {
@@ -135,100 +140,72 @@ body {
 }
 
 .konten2 h3 {
-  font-size: 3.3em;
+  font-size: 3rem;
   margin-bottom: 10px;
-  margin-top: 70px;
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff; /* putih biar kontras */
+  color: #ffffff;
   font-weight: 600;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-  letter-spacing: 1px;
 }
 
 .konten2 h2 {
-  font-size: 1.1em;
-  color: #d4f5e9; /* hijau muda biar tetap tema kopi */
-  margin-top: 40px;
-  font-weight: 400;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
-  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+  color: #d4f5e9;
+  margin-top: 20px;
 }
 
-/* Akhir Style Konten2 */
-
-/* Awal Style Pendiri */
+/* =======================
+   PENDIRI
+======================= */
 .pendiri {
   background-color: #f8f9fa;
+  padding: 60px 20px;
 }
 
-/* Nama */
 .nama {
-  font-size: 3em;
+  font-size: 2.5rem;
   color: #2f2a25;
-  margin-bottom: 10px;
 }
 
-/* Jabatan */
 .jabatan {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #666;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-/* Judul */
 .judul {
-  font-size: 2em;
+  font-size: 1.8rem;
   margin-bottom: 15px;
   color: #2f2a25;
 }
 
-/* Deskripsi */
 .deskripsi {
-  font-size: 1.05em;
+  font-size: 1rem;
   line-height: 1.8;
   color: #555;
   text-align: justify;
 }
 
-/* Foto */
 .foto-profil {
-  max-width: 350px;
   width: 100%;
+  max-width: 350px;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Akhir Style Pendiri */
-
-/* Awal Style Info Kopi Kalcer */
-.info-kalcer {
-  background-color: #f8f9fa;
-}
-
-/* Logo */
+/* =======================
+   INFO KOPI KALCER
+======================= */
 .info-kalcer {
   background-color: #83746d1b;
-  color: white;
+  padding: 60px 20px;
 }
 
 .logo {
-  font-size: 3em;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #5a4634;
   margin-bottom: 20px;
   letter-spacing: 2px;
-}
-
-/* Deskripsi */
-.deskripsi {
-  font-size: 1.1em;
-  color: #555;
-  max-width: 500px;
-}
-
-/* Foto */
-.foto-kalcer {
-  margin-top: 20px;
 }
 
 .foto-kalcer img {
@@ -238,43 +215,34 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Info kanan */
-.judul-info {
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #2f2a25;
-}
-
-.info-kalcer p {
-  color: #555;
-  line-height: 1.7;
-}
-
-/* Maps */
 .maps iframe {
   width: 100%;
+  height: 300px;
+  border: 0;
   border-radius: 15px;
 }
-/* Akhir Style Info Kopi Kalcer */
 
-/* Style Menu Kopi Kalcer */
+/* =======================
+   MENU KOPI KALCER
+======================= */
 .menu-kalcer {
   background-color: #c8b79c;
   width: 100%;
-  padding: 60px 80px;
+  padding: 60px 20px;
 }
 
-/* Judul */
 .judul-menu {
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-/* Kategori */
 .kategori {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .kategori button {
@@ -282,43 +250,98 @@ body {
   background: transparent;
   padding: 8px 15px;
   cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
+.kategori button:hover,
 .kategori .active {
   background-color: #e38b29;
   color: white;
   border: none;
 }
 
-/* List Menu */
 .list-menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
-  width: 100%;
   max-height: 350px;
   overflow-y: auto;
 }
 
 .item {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px dashed #333;
   padding: 8px 0;
-}
-
-/* Hover */
-.item:hover {
-  color: #e38b29;
-  transform: translateX(5px);
   transition: 0.2s;
 }
 
-/* Responsive */
+.item:hover {
+  color: #e38b29;
+  transform: translateX(5px);
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .container-jumbotron h1 {
+    font-size: 2.8rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .sosial-media {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
+  .container-jumbotron {
+    text-align: center;
+    margin: auto;
+  }
+
+  .container-jumbotron h1 {
+    font-size: 2.2rem;
+  }
+
+  .container-jumbotron p {
+    font-size: 1rem;
+  }
+
+  .konten2 h3 {
+    font-size: 2.2rem;
+  }
+
+  .nama {
+    font-size: 2rem;
+  }
+
   .list-menu {
     grid-template-columns: 1fr;
   }
 }
-/* Akhir Style Menu Kopi Kalcer */
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .container-jumbotron h1 {
+    font-size: 1.8rem;
+  }
+
+  .konten2 h3 {
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+}

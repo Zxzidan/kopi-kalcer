@@ -1,21 +1,32 @@
+/* =======================
+   SECTION LOKASI KOPI
+======================= */
 .lokasi-kopi {
-    min-height: 500px;  
+  min-height: 500px;
   display: flex;
   align-items: center;
   background: #f8f5f0;
   padding: 60px 20px;
 }
 
+/* CONTAINER INTERNAL */
+.lokasi-kopi .lokasi-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* GRID UTAMA */
-.row {
+.lokasi-kopi .lokasi-row {
   display: flex;
   align-items: center;
   gap: 50px;
+  flex-wrap: wrap; /* Agar responsif */
 }
 
-/* KIRI */
-.col-kiri {
-  flex: 1;
+/* KOLOM KIRI */
+.lokasi-kopi .col-kiri {
+  flex: 1 1 450px;
   display: flex;
   justify-content: center;
 }
@@ -23,38 +34,136 @@
 /* GAMBAR */
 #gambar-lokasi {
   width: 100%;
-  max-width: 450px; 
+  max-width: 450px;
   border-radius: 20px;
   object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* KANAN */
-.col-kanan {
-  flex: 1;
-  min-height: 400px;
+/* KOLOM KANAN */
+.lokasi-kopi .col-kanan {
+  flex: 1 1 450px;
+  min-height: 300px;
 }
 
-/* BUTTON */
-.pilih-lokasi,
-.proses {
-  margin: 20px 0;
-}
-
-button {
-  padding: 8px 15px;
-  border: 1px solid #333;
-  background: transparent;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-button.active {
-  background: #e38b29;
-  color: white;
-  border: none;
+/* JUDUL DAN TEKS */
+.lokasi-kopi h2 {
+  font-size: 2rem;
+  color: #2f2a25;
+  margin-bottom: 15px;
 }
 
 #text-lokasi,
 #detail-text {
   min-height: 120px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* =======================
+   BUTTON STYLE
+======================= */
+.pilih-lokasi,
+.proses {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pilih-lokasi button,
+.proses button {
+  padding: 10px 18px;
+  border: 1px solid #333;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.pilih-lokasi button:hover,
+.proses button:hover {
+  background: #e38b29;
+  color: #fff;
+  border-color: #e38b29;
+}
+
+.pilih-lokasi button.active,
+.proses button.active {
+  background: #e38b29;
+  color: #fff;
+  border: none;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .lokasi-kopi {
+    padding: 50px 20px;
+  }
+
+  .lokasi-kopi .lokasi-row {
+    gap: 30px;
+  }
+
+  .lokasi-kopi h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .lokasi-kopi .col-kanan {
+    text-align: center;
+  }
+
+  .pilih-lokasi,
+  .proses {
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .lokasi-kopi {
+    padding: 40px 15px;
+  }
+
+  .lokasi-kopi .lokasi-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #gambar-lokasi {
+    max-width: 100%;
+  }
+
+  .lokasi-kopi h2 {
+    font-size: 1.6rem;
+  }
+
+  #text-lokasi,
+  #detail-text {
+    min-height: auto;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .lokasi-kopi {
+    padding: 30px 10px;
+  }
+
+  .lokasi-kopi h2 {
+    font-size: 1.4rem;
+  }
+
+  .pilih-lokasi button,
+  .proses button {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
 }

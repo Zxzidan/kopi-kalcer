@@ -1,53 +1,77 @@
+/* =======================
+   GLOBAL STYLE
+======================= */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   background: #f8f5f0;
+  line-height: 1.6;
 }
 
+/* =======================
+   FAQ SECTION
+======================= */
 .faq-section {
-  font-family: "Montserrat", sans-serif;
   max-width: 1000px;
   margin: auto;
   padding: 40px 20px;
 }
 
 .faq-section h1 {
-  font-family: "Montserrat", sans-serif;
   color: rgb(79, 104, 97);
   margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
 }
 
+/* =======================
+   FAQ BOX
+======================= */
 .faq-box {
-  background: #aea1a16e;
-  border-radius: 10px;
-  padding: 20px;
+  background: rgba(174, 161, 161, 0.4);
+  border-radius: 12px;
+  padding: 25px;
   margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .faq-box h2 {
-  font-family: "Montserrat", sans-serif;
   color: #5a4634;
   margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
+/* =======================
+   FAQ ITEM
+======================= */
 .faq-item {
   border-bottom: 1px solid #ddd;
   padding: 15px 0;
 }
 
+.faq-item:last-child {
+  border-bottom: none;
+}
+
 .faq-question {
-  font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
   font-weight: 600;
+  font-size: 1.1rem;
+  gap: 10px;
 }
 
 .faq-answer {
-  font-family: "Montserrat", sans-serif;
   margin-top: 10px;
   color: #555;
   display: none;
+  font-size: 1rem;
 }
 
 .faq-item.active .faq-answer {
@@ -56,4 +80,80 @@ body {
 
 .icon {
   font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Animasi ikon ketika aktif */
+.faq-item.active .icon {
+  transform: rotate(45deg);
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 30px 15px;
+  }
+
+  .faq-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .faq-box {
+    padding: 20px;
+  }
+
+  .faq-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 20px 10px;
+  }
+
+  .faq-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .faq-box {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .faq-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .faq-question {
+    font-size: 0.95rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+}
+
+/* Layar besar */
+@media (min-width: 1200px) {
+  .faq-section {
+    max-width: 1100px;
+  }
 }
